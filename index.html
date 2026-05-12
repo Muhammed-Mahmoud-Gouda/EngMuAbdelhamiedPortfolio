@@ -545,10 +545,12 @@
       }
       .about-img-box {
         width: 100%;
-        aspect-ratio: 3/4;
+        aspect-ratio: 1/1;
         position: relative;
         overflow: hidden;
         border-radius: 2px;
+        max-width: 450px;
+        margin: 0 auto;
       }
       .about-img-inner img {
         width: 100%;
@@ -559,10 +561,11 @@
 
       .about-img-inner {
         width: 100%;
-        max-width: 450px; /* تقدر تزودها أو تقللها */
-        aspect-ratio: 1 / 1; /* يخليها مربع */
+        height: 100%;
+        max-width: 100%; /* استجابة كاملة */
+        aspect-ratio: 1 / 1;
         overflow: hidden;
-        border-radius: 20px; /* اختياري */
+        border-radius: 20px;
       }
       .about-img-box::after {
         content: "";
@@ -1300,8 +1303,9 @@
           gap: 3rem;
         }
         .about-img-box {
-          aspect-ratio: 16/9;
-          max-height: 300px;
+          max-height: 200px; /* ارتفاع مناسب للهواتف */
+          max-width: 100%; /* تأكد من الاستجابة */
+          border-radius: 15px; /* يمكنك تقليل الزوايا قليلاً */
         }
         .skills-grid {
           grid-template-columns: repeat(2, 1fr);
@@ -1497,7 +1501,12 @@
           <div class="about-accent-2"></div>
           <div class="about-img-box">
             <div class="about-img-inner">
-              <img src="1778514416584.png" alt="" width="500" height="500" />
+              <img
+                src="1778514416584.png"
+                alt="Muhamed Abdelhamed"
+                width="500"
+                height="500"
+              />
             </div>
           </div>
           <div class="about-accent"></div>
